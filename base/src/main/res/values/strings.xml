@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Find my fuel</string>
+    <string name="download">Download data</string>
+    <string name="wait">Wait …</string>
+    <string name="unzip">Decompression of data</string>
+    <string name="parsing">Data formatting</string>
+    <string name="town">Town</string>
+    <string name="search">Search</string>
+    <string name="geocoding">Geocoding …</string>
+    <string name="network">"Enable internet to refresh data "</string>
+    <string name="price">"The cheapest "</string>
+    <string name="dist">"The closest "</string>
+    <string name="maps">Open in maps</string>
+</resources>

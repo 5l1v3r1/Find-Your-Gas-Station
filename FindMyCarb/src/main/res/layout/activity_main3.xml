@@ -1,0 +1,18 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/myCoordinatorLayout2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+</android.support.design.widget.CoordinatorLayout>
+

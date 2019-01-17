@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Find my fuel</string>
+    <string name="download">Téléchargement données</string>
+    <string name="wait">Veuillez patienter …</string>
+    <string name="unzip">Décompression des données</string>
+    <string name="parsing">Mise en forme des données</string>
+    <string name="town">Ville</string>
+    <string name="search">Chercher</string>
+    <string name="geocoding">Géocodage …</string>
+    <string name="network">Activer internet pour actualiser les données</string>
+    <string name="price">Le moins cher</string>
+    <string name="dist">Le plus proche</string>
+    <string name="maps">Ouvrir dans maps</string>
+</resources>
