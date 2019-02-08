@@ -77,9 +77,8 @@ public class Main2Activity extends AppCompatActivity {
             public void onLocationChanged(Location location) {
                 Log.d(TAG, "loc : " + location.getLongitude() + " " + location.getLatitude());
 
-                if(countFixGPS == 5)locationManager.removeUpdates(listenerGPS);
-                Log.i(TAG, "Fix done");
-                countFixGPS +=1;
+                locationManager.removeUpdates(listenerGPS);
+                Log.i(TAG, "Got location");
             }
 
             @Override
@@ -101,8 +100,11 @@ public class Main2Activity extends AppCompatActivity {
         };
 
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            locationManager = (LocationManager) context.getSystemService(LOCATION_SERVICE);
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 100, 0, listenerGPS);
+            if (locationManager == null) {
+                locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
+            }
+            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1000, 10f, listenerGPS);
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 10f, listenerGPS);
         }
     }
 
